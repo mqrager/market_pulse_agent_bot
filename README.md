@@ -22,8 +22,8 @@ pip install -r requirements.txt
 1. Create `.env` (never commit this):
 ```
 DISCORD_BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN
-READ_CHANNEL_ID=1401965318414536800
-POST_CHANNEL_ID=1402142866498654349
+READ_CHANNEL_ID=
+POST_CHANNEL_ID=
 ```
 2. (Optional) Edit `config.yaml` to change timezone, market hours, schedule, and default tickers.
 
