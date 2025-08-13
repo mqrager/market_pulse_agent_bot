@@ -1,0 +1,19 @@
+# Market Pulse Agent — runtime configuration
+discord:
+  read_channel_id: 0         # fallback if not set in .env
+  write_channel_id: 0        # fallback if not set in .env
+
+market:
+  timezone: "US/Pacific"
+  market_open: "09:30"       # ET
+  market_close: "16:00"      # ET
+  tickers: ["SPY","QQQ","DIA"]
+  update_schedule:
+    early_duration_minutes: 150   # first 2.5h
+    early_interval_minutes: 30    # every 30m early
+    later_interval_minutes: 60    # then hourly
+
+log:
+  level: "INFO"
+  heartbeat_secs: 120
+  sample_rows: 3
